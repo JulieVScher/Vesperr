@@ -1217,6 +1217,26 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+/* Default image size and layout */
+.col-sm-4 {
+  width: 33.33%; /* 3 images in a row */
+  float: left;
+}
+
+.col-sm-4 img {
+  max-width: 100%; /* adjust image size */
+  height: auto;
+}
+
+/* Stack images vertically on smaller screens */
+@media only screen and (max-width: 767px) {
+  .col-sm-4 {
+    width: 100%; /* full width */
+    float: none; /* remove float */
+    margin-bottom: 20px; /* add some space between images */
+  }
+}
+
 .team {
   background: url("../img/team-bg.jpg") center center no-repeat;
   background-size: cover;
