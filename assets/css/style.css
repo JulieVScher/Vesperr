@@ -606,7 +606,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #28a745;
+  color: #009cea;
 }
 
 .about .content p:last-child {
@@ -1558,7 +1558,7 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: var(--color-primary);
+  color: #009cea;
 }
 
 .faq .accordion-button:after {
