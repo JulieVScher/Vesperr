@@ -768,7 +768,7 @@ section {
 --------------------------------------------------------------*/
 
 .services {
-  background-color: #1eb4ff;
+  background-color: #f7fbfe;
 }
 
 .services .icon-box {
@@ -1501,6 +1501,7 @@ section {
   }
 }
 
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
@@ -1578,6 +1579,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact {
+  background-color: #f7f8f9;
+}
+
 .contact .info {
   padding: 30px;
   background: #fff;
