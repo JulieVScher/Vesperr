@@ -1299,7 +1299,7 @@ section {
   font-size: 16px;
   color: #364146;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 .team .member h4::after {
@@ -1448,7 +1448,7 @@ section {
 
 
 .cta {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta1.jpg") center center;
   background-size: cover;
   padding: 80px 0;
 }
