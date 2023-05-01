@@ -1299,7 +1299,7 @@ section {
   font-size: 16px;
   color: #364146;
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 1px;
 }
 
 .team .member h4::after {
