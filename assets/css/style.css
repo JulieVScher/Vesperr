@@ -620,71 +620,86 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features {
-  padding-bottom: 40px;
-}
-
 .features .nav-tabs {
   border: 0;
 }
 
 .features .nav-link {
-  border: 0;
-  padding: 20px;
+  border: 1px solid #b5ccdb;
+  padding: 15px;
   transition: 0.3s;
-  color: #364146;
-  transition: 0.3s ease-in-out;
+  color: #2f3133;
   border-radius: 0;
-  border-left: 4px solid #fafbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
 }
 
 .features .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
-  transition: 0.3s ease-in-out;
-  color: #576971;
-}
-
-.features .nav-link p {
-  font-size: 14px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .features .nav-link:hover {
-  background: #fafbfb;
-}
-
-.features .nav-link:hover h4 {
-  color: #364146;
+  color: #3498db;
 }
 
 .features .nav-link.active {
-  border-radius: 0;
-  border: 0;
-  border-left: 4px solid #009cea;
-  background: #fafbfb;
+  background: #3498db;
+  color: #fff;
+  border-color: #3498db;
 }
 
-.features .nav-link.active h4 {
-  color: #009cea;
+@media (max-width: 768px) {
+  .features .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
 }
 
-.features .tab-pane.active {
-  animation: slide-down 0.5s ease-out;
+@media (max-width: 575px) {
+  .features .nav-link {
+    padding: 15px;
+  }
+
+  .features .nav-link i {
+    font-size: 24px;
+  }
 }
 
 .features .tab-content {
-  text-align: right;
+  margin-top: 30px;
 }
 
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
+.features .tab-pane h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
 
-  100% {
-    opacity: 1;
-  }
+.features .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.features .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #3498db;
+}
+
+.features .tab-pane p:last-child {
+  margin-bottom: 0;
 }
 /*--------------------------------------------------------------
 # Counts
