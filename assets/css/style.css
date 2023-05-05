@@ -256,7 +256,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #131212;
 }
 
 @media (max-width: 991px) {
@@ -276,7 +276,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(9, 9, 9, 0.9);
+  background: rgba(201, 200, 200, 0.5);
   transition: 0.3s;
   z-index: 999;
 }
@@ -291,7 +291,7 @@ h6 {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
+  right: 20px; /* decrease value to move right edge more left */
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
@@ -299,6 +299,7 @@ h6 {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  width: 80%; /* set width to 80% of parent element */
 }
 
 .navbar-mobile a,
