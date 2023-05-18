@@ -1553,11 +1553,28 @@ section {
   }
 }
 
-@media (min-width: 769px) {
-  .cta2 .cta2-btn-container {
+@media (max-width: 768px) {
+  .cta2 {
+    height: 300px; /* Adjust the height value as desired for mobile devices */
+  }
+
+  .logo4-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .logo4-img {
+    max-height: 100%;
+    width: auto;
+    flex: 0 0 auto;
+    object-fit: contain;
+  }
+
+  .logo4-img:last-child {
+    flex-grow: 1;
   }
 }
 
