@@ -1582,7 +1582,7 @@ section {
   }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 428px) {
   .cta2 {
     height: auto; /* Adjust the height to auto for flexible height */
   }
