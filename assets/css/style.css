@@ -1559,25 +1559,57 @@ section {
     height: 300px; /* Adjust the height value as desired for mobile devices */
   }
 
-  .logo4-container {
+  .logo-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Adjust alignment as desired */
     height: 100%;
     overflow: hidden;
+    padding-bottom: 20px; /* Add the desired padding value */
   }
 
   .logo4-img {
-    max-height: 100%;
+    max-height: calc(33.33% - 20px); /* Adjust height and margin value as desired */
     width: auto;
-    flex: 0 0 auto;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust flex value based on the number of logos and margin */
     object-fit: contain;
+    margin-bottom: 5px; /* Add the desired margin value */
   }
 
   .logo4-img:last-child {
-    flex-grow: 1;
+    margin-bottom: 0; /* Reset margin for the last stacked logo */
   }
 }
+
+@media (max-width: 427px) {
+  .cta2 {
+    height: auto; /* Adjust the height to auto for flexible height */
+  }
+
+  .logo4-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Add the desired padding value */
+  }
+
+  .logo4-img {
+    width: 100%; /* Set the width to occupy full container width */
+    height: auto; /* Allow logos to adjust their height proportionally */
+    object-fit: contain;
+    margin-bottom: 20px; /* Add the desired margin value */
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
