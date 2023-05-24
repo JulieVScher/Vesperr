@@ -576,6 +576,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/* About Section */
 .about {
   padding: 0;
   margin-top: 40px;
@@ -584,7 +585,7 @@ section {
 
 .about .container {
   background-color: #f7f8f9;
-  padding: 60px 50px;
+  padding: 10px 50px;
 }
 
 @media (max-width: 992px) {
@@ -617,6 +618,12 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .about .col-lg-6 img {
+    height: 400px; /* Adjust the height as desired */
+  }
 }
 
 /*--------------------------------------------------------------
