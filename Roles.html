@@ -75,22 +75,15 @@
       text-align: left;
       padding-bottom: 15px; /* Add padding between each list item */
     }
-
-    .center-container {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px; /* Adjust the padding as needed */
-  }
-  
-  .indeed-jobs {
+    .widget-container {
     width: 800px; /* Adjust the width as desired */
-    margin: 0 auto; /* Center the widget horizontally */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Adjust the padding as needed */
   }
 
-  @media (max-width: 992px) {
-    /* Reset width for smaller screens */
-    .indeed-jobs {
-      width: 100%;
+  @media (max-width: 800px) {
+    .widget-container {
+      width: 100%; /* Set container to 100% width on smaller screens */
     }
   }
 </style>
@@ -213,11 +206,11 @@
       </div>
     </div>
 
-   <div class="center-container">
-  <div class="sk-ww-indeed-jobs" data-embed-id="146913"></div>
-</div>
-
-<script src="https://widgets.sociablekit.com/indeed-jobs/widget.js" async defer></script>
+    <div class="widget-container">
+      <div class="sk-ww-indeed-jobs" data-embed-id="146913"></div>
+    </div>
+    
+    <script src="https://widgets.sociablekit.com/indeed-jobs/widget.js" async defer></script>
           
                
            
