@@ -83,7 +83,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 5px 3px 0; /* Decrease the bottom padding value to make the header less tall */
-  background: #A9DCE3;
+  background: #f1f1f2;
 }
 
 #header.header-scrolled {
