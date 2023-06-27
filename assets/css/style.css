@@ -92,7 +92,7 @@ h6 {
 }
 
 #header .logo {
-  padding-top: 10px; /* Add a small amount of padding at the top for the logo */
+  padding-top: 5px; /* Add a small amount of padding at the top for the logo */
 }
 
 #header .logo h1 {
@@ -151,7 +151,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 400;
-  color: #555555;
+  color: #1f8ac0;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -167,23 +167,23 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3498db;
+  color: #104c91;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #ffffff;
+  background: #1f8ac0;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #000000;
-  border: 1.5px solid #000000; /* Add a black border to the button */
+  color: #fff;
+  border: 1.5px solid #3498db; /* Add a black border to the button */
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #4aa3df;
+  background: #104c91;
 }
 
 .navbar .dropdown ul {
@@ -254,7 +254,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #222222;
+  color: #1f8ac0;
   font-size: 28px;
   cursor: pointer;
   display: none;
