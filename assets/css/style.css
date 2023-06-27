@@ -81,13 +81,17 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 5px 5px 0; /* Decrease the bottom padding value to make the header less tall */
+  padding: 5px 3px 0; /* Decrease the bottom padding value to make the header less tall */
   background: #A9DCE3;
 }
 
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 5px 5px 0; /* Decrease the bottom padding value to make the header less tall */
+  padding: 7px 5px 0; /* Decrease the bottom padding value to make the header less tall */
+}
+
+#header .logo {
+  padding-top: 10px; /* Add a small amount of padding at the top for the logo */
 }
 
 #header .logo h1 {
