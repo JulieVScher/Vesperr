@@ -81,13 +81,13 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
-  background: #f7f8f9;
+  padding: 5px 5px 0; /* Decrease the bottom padding value to make the header less tall */
+  background: #A9DCE3;
 }
 
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 12px 0;
+  padding: 5px 5px 0; /* Decrease the bottom padding value to make the header less tall */
 }
 
 #header .logo h1 {
@@ -106,15 +106,15 @@ h6 {
 }
 
 #header .logo {
-  width: 50px;
-  height: 50px;
+  width: 100px; /* Increase the width value to make the logo bigger */
+  height: 100px; /* Increase the height value to make the logo bigger */
 }
 
 #header .logo img {
-  padding-top: 6px;
+
   display: block;
-  max-width: 160%;
-  max-height: 160%;
+  max-width: 150%; /* Increase the max-width value to make the logo bigger */
+  max-height: auto; /* Increase the max-height value to make the logo bigger */
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -171,7 +171,7 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .navbar .getstarted:hover,
