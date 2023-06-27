@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #3498db;
+  color: #A9DCE3;
   text-decoration: none;
 }
 
@@ -43,10 +43,11 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3498db;
+  background: #A9DCE3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
+  border: 1.5px solid #000000; /* Add a black border to the button */
   transition: all 0.4s;
 }
 
@@ -95,7 +96,7 @@ h6 {
 }
 
 #header .logo h1 {
-  font-size: 30px;
+  font-size:larger;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -171,11 +172,12 @@ h6 {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #3498db;
+  background: #ffffff;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #ffffff;
+  color: #000000;
+  border: 1.5px solid #000000; /* Add a black border to the button */
 }
 
 .navbar .getstarted:hover,
@@ -617,7 +619,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #009cea;
+  color: #A9DCE3;
 }
 
 .about .content p:last-child {
@@ -664,9 +666,9 @@ section {
 }
 
 .features .nav-link.active {
-  background: #3498db;
+  background: #A9DCE3;
   color: #fff;
-  border-color: #3498db;
+  border-color: #A9DCE3;
 }
 
 @media (max-width: 768px) {
@@ -708,7 +710,7 @@ section {
 .features .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #3498db;
+  color: #A9DCE3;
 }
 
 .features .tab-pane p:last-child {
@@ -743,7 +745,7 @@ section {
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #3498db;
+  color: #A9DCE3;
   float: left;
   line-height: 0;
 }
@@ -800,7 +802,7 @@ section {
 --------------------------------------------------------------*/
 
 .services {
-  background-color: rgb(48, 117, 163);
+  background-color:#A9DCE3;
 }
 
 .services .icon-box {
@@ -828,7 +830,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #3498db;
+  background: #A9DCE3;
   right: 0;
   top: 0;
   width: 100%;
@@ -844,7 +846,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #3498db;
+  background: #A9DCE3;
   transition: all 0.3s ease-in-out;
 }
 
@@ -880,7 +882,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #3498db;
+  color: #A9DCE3;
 }
 
 /*--------------------------------------------------------------
@@ -940,7 +942,7 @@ section {
 }
 
 .more-services .card:hover .card-body {
-  background: #3498db;
+  background: #A9DCE3;
 }
 
 .more-services .card:hover .read-more a,
@@ -1030,11 +1032,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid #A9DCE3;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #A9DCE3;
 }
 
 @media (max-width: 767px) {
@@ -1206,7 +1208,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #A9DCE3;
 }
 
 .portfolio-details .portfolio-info {
@@ -1357,7 +1359,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #009cea;
+  color: #A9DCE3;
 }
 
 .team .member .social i {
@@ -1395,7 +1397,7 @@ section {
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #3498db;
+  color: #A9DCE3;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1465,7 +1467,7 @@ section {
 }
 
 .pricing .recommended .btn-buy {
-  background: #3498db;
+  background: #A9DCE3;
   color: #fff;
 }
 
@@ -1502,11 +1504,11 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #009cea;
+  background: #A9DCE3;
 }
 
 .cta .cta-btn:hover {
-  background: #008bd1;
+  background: #A9DCE3;
 }
 
 @media (min-width: 1024px) {
@@ -1552,7 +1554,7 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #009cea;
+  background:#A9DCE3;;
 }
 
 .cta2 .cta2-btn:hover {
@@ -1691,7 +1693,7 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: #009cea;
+  color: #A9DCE3;
 }
 
 .faq .accordion-button:after {
@@ -1726,7 +1728,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #009cea;
+  color: #A9DCE3;
   float: left;
   width: 44px;
   height: 44px;
@@ -1773,14 +1775,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #009cea;
+  background: #A9DCE3;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #009cea;
+  background: #A9DCE3;
   color: #fff;
 }
 
@@ -1812,7 +1814,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #009cea;
+  background: #A9DCE3;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1832,7 +1834,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #009cea;
+  border: 3px solid #A9DCE3;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1853,7 +1855,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #009cea;
+  background: #A9DCE3;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1862,7 +1864,7 @@ section {
 }
 
 .pill-shaped-button {
-  background: #009cea;
+  background: #A9DCE3;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -2000,7 +2002,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #009cea;
+  background: #A9DCE3;
   color: #fff;
   text-decoration: none;
 }
@@ -2025,7 +2027,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #009cea;
+  color: #A9DCE3;
   font-size: 18px;
   line-height: 1;
   margin-left: -5px;
@@ -2049,7 +2051,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #009cea;
+  color: #A9DCE3;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -2076,14 +2078,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #009cea;
+  background: #A9DCE3;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #007ab7;
+  background: #A9DCE3;
 }
 
 #footer .copyright {
