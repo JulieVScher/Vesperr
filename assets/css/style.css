@@ -151,7 +151,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 400;
-  color: #1f8ac0;
+  color: #1995ad;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -167,23 +167,23 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #104c91;
+  color: #a1d6e2;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #1f8ac0;
+  background: #1995ad;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
   color: #fff;
-  border: 1.5px solid #3498db; /* Add a black border to the button */
+  border: 1.5px solid #1995ad; /* Add a black border to the button */
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #104c91;
+  background: #1995ad;
 }
 
 .navbar .dropdown ul {
@@ -254,7 +254,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #1f8ac0;
+  color: #1995ad;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -1500,15 +1500,15 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #A9DCE3;
+  background: #1995ad;
 }
 
 .cta .cta-btn:hover {
-  background: #A9DCE3;
+  background: #a1d6e2;
 }
 
 @media (min-width: 1024px) {
