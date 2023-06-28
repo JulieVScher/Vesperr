@@ -43,11 +43,11 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #A9DCE3;
+  background: #1995ad;
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  border: 1.5px solid #000000; /* Add a black border to the button */
+  
   transition: all 0.4s;
 }
 
@@ -177,13 +177,13 @@ h6 {
   margin-left: 30px;
   border-radius: 50px;
   color: #fff;
-  border: 1.5px solid #1995ad; /* Add a black border to the button */
+ 
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #1995ad;
+  background: #a1d6e2;
 }
 
 .navbar .dropdown ul {
@@ -218,7 +218,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #3498db;
+  color: #1995ad;
+  border-color: #1995ad;
 }
 
 .navbar .dropdown:hover>ul {
@@ -255,7 +256,8 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #1995ad;
-  font-size: 28px;
+  font-size: 35px;
+  font-weight: bolder;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -312,13 +314,13 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #222222;
+  color: #1995ad;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #3498db;
+  color: #a1d6e2;
 }
 
 .navbar-mobile .getstarted,
@@ -662,13 +664,13 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #3498db;
+  color: #a1d6e2;
 }
 
 .features .nav-link.active {
-  background: #A9DCE3;
+  background: #1995ad;
   color: #fff;
-  border-color: #A9DCE3;
+  border-color: #1995ad;
 }
 
 @media (max-width: 768px) {
@@ -710,7 +712,7 @@ section {
 .features .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #A9DCE3;
+  color: #A1d6e2;
 }
 
 .features .tab-pane p:last-child {
@@ -802,7 +804,7 @@ section {
 --------------------------------------------------------------*/
 
 .services {
-  background-color:#A9DCE3;
+  background-color:#1995ad;
 }
 
 .services .icon-box {
@@ -830,7 +832,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #A9DCE3;
+  background: #a1d6e2;
   right: 0;
   top: 0;
   width: 100%;
@@ -882,7 +884,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #A9DCE3;
+  color: #1995ad;
 }
 
 /*--------------------------------------------------------------
@@ -1775,7 +1777,7 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #A9DCE3;
+  background: #A1d6e2;
   color: #fff;
 }
 
@@ -1855,16 +1857,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #A9DCE3;
+  background: #1995ad;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .pill-shaped-button {
-  background: #A9DCE3;
+  background: #1995ad;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1873,7 +1875,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1eb4ff;
+  background: #A1d6e2;
 }
 
 @keyframes animate-loading {
@@ -1961,7 +1963,7 @@ section {
 
 #footer .footer-top {
   background: #fff;
-  padding: 60px 0 30px 0;
+  padding: 20px 0 30px 0;
   border-top: 2px solid #e9ecee;
   border-bottom: 2px solid #e9ecee;
 }
@@ -1990,7 +1992,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #e9ecee;
-  color: #8a9ca5;
+  color: #1995ad;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
