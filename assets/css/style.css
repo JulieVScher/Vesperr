@@ -151,7 +151,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   color: #005d9e;
   white-space: nowrap;
   transition: 0.3s;
@@ -835,7 +835,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #005c9ec0;
+  background: #005c9ed7;
   right: 0;
   top: 0;
   width: 100%;
