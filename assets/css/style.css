@@ -2001,7 +2001,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fcfef1;
-  color: #005d93;
+  color: #ff3d33;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -2014,7 +2014,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #fcfef1;
-  color: #ff3d33;
+  color: #005d9e;
   text-decoration: none;
 }
 
