@@ -433,7 +433,8 @@ h6 {
 
 .hero .hero-title {
   color: #ff3d33;
-  font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   font-size: 5rem;
 }
 
