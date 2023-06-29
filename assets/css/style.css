@@ -16,12 +16,13 @@ body {
 }
 
 a {
-  color: #ff3d33;
+  color: #fcfef1;
   text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
-  color: #2f3133;
+  color:  #fcfef1;
   text-decoration: none;
 }
 
@@ -624,7 +625,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #ff3d33;
+  color: #fcfef1;
 }
 
 .about .content p:last-child {
@@ -835,7 +836,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #005c9ed7;
+  background: #015692;
   right: 0;
   top: 0;
   width: 100%;
