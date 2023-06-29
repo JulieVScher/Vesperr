@@ -1998,8 +1998,8 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ff3d33;
-  color: #fcfef1;
+  background: #fcfef1;
+  color: #005d93;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -2036,7 +2036,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ff3d33;
+  color: #fcfef1;
   font-size: 18px;
   line-height: 1;
   margin-left: -5px;
