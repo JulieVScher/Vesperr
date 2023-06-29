@@ -433,8 +433,8 @@ h6 {
 
 .hero .hero-title {
   color: #ff3d33;
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight:bolder;
+  font-size: 5rem;
 }
 
 @media (min-width: 768px) {
