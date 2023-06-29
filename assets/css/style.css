@@ -835,7 +835,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #ff3d33;
+  background: #005c9ec0;
   right: 0;
   top: 0;
   width: 100%;
@@ -851,7 +851,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #ff3d33;
+  background: #005d9e;
   transition: all 0.3s ease-in-out;
 }
 
@@ -887,7 +887,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #ff3d33;
+  color: #005d9e;
 }
 
 /*--------------------------------------------------------------
