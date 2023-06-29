@@ -127,6 +127,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
+
 * Desktop Navigation 
 */
 .navbar {
@@ -928,7 +929,7 @@ section {
 }
 
 .more-services .card-title a {
-  color: #ff3d33;
+  color: #005d9e;
 }
 
 .more-services .card-text {
