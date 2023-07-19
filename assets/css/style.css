@@ -173,7 +173,7 @@ h6 {
   color: #ff3d33;
 }
 
-.navbar .getstarted,
+.navbar .getstarted,F
 .navbar .getstarted:focus {
   background: #005d9e;
   padding: 8px 25px;
@@ -1970,7 +1970,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #005d9e;
+  background: #fcfef1;
   padding: 20px 0 30px 0;
   border-top: 2px solid #e9ecee;
   border-bottom: 2px solid #e9ecee;
@@ -2000,8 +2000,8 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #fcfef1;
-  color: #ff3d33;
+  background: #005d9e;
+  color: ##ff3d33;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -2013,15 +2013,15 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #fcfef1;
-  color: #005d9e;
+  background: #ff3d33;
+  color: #fcfef1;
   text-decoration: none;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fcfef1;
+  color: #005d9e;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2038,7 +2038,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #fcfef1;
+  color: #005d9e;
   font-size: 18px;
   line-height: 1;
   margin-left: -5px;
@@ -2055,7 +2055,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fcfef1;
+  color: #005d9e;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
