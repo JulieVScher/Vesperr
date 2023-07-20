@@ -254,6 +254,24 @@ h6 {
   }
 }
 
+/* Default styles for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Add any other necessary styles for your navbar */
+}
+
+.navbar li {
+  /* Add any necessary styles for the list items */
+}
+
+/* Media query for screen size between 991px and 1199px */
+@media (min-width: 991px) and (max-width: 1199px) {
+  .navbar li {
+    margin-right: -10px; /* Reduce the margin between the list items to make them closer together */
+  }
+}
+
 /**
 * Mobile Navigation 
 */
