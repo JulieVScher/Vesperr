@@ -268,7 +268,7 @@ h6 {
 /* Media query for screen size between 991px and 1199px */
 @media (min-width: 991px) and (max-width: 1199px) {
   .navbar li {
-    margin-right: -10px; /* Reduce the margin between the list items to make them closer together */
+    margin-right: -15px; /* Reduce the margin between the list items to make them closer together */
   }
 }
 
