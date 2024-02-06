@@ -7,6 +7,39 @@
 
   <title>Home-Based ABA Therapy for Kids and Youth with Autism in Toronto & GTA | ABA in the GTA</title>
 	<meta name="description" content="ABA in the GTA provides high-quality, home-based ABA therapy for kids and youth with autism in Toronto and the Greater Toronto Area (GTA). Our experienced therapists use evidence-based techniques to help your child reach their full potential. Contact us today to learn more.">
+  <style>
+    /* Styles for the container */
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Style for each embedded video */
+    .fb-video {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .video-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .fb-video {
+        width: 100%; /* Make videos take up full width on smaller screens */
+        height: auto; /* Allow videos to maintain aspect ratio */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="fqQW6Xa0"></script>
 
 
   <!-- Favicons -->
@@ -729,9 +762,22 @@
     </div>
 
    
-  <div class="sk-ww-facebook-videos" data-embed-id="25356696"></div> 
-  <script src="https://widgets.sociablekit.com/facebook-videos/widget.js" async defer></script>
-      </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="fqQW6Xa0"></script>
+    
+    <!-- Container for Facebook Video Embeds -->
+    <div class="video-container">
+      <div class="fb-video" data-href="https://www.facebook.com/watch/?v=262277883219247" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/646780687395408" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/657036392669727" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/1687183025087791" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/997961688291701" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/1715383158901695" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/656069506143494" data-show-text="false"></div>
+      <div class="fb-video" data-href="https://www.facebook.com/abasupervisors/videos/1616685715519545" data-show-text="false"></div>
+      <!-- Add more videos here -->
+    </div>
+    
 
     </div>
 
