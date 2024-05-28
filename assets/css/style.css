@@ -173,22 +173,19 @@ h6 {
   color: #ff3d33;
 }
 
-.navbar .getstarted,F
+.navbar .getstarted,
 .navbar .getstarted:focus {
   background: #005d9e;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
   color: #fcfef1;
- 
 }
 
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
+.navbar .getstarted:hover {
+  background: #ff3d33; /* Change background color on hover */
   color: #fcfef1;
-  background: #ff3d33;
 }
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;

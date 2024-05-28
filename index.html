@@ -109,13 +109,13 @@
         function handleCallNowClick(event) {
           // Prevent the default action
           event.preventDefault();
-      
-          // Remove the 'Call Now' button from the DOM
-          var callNowButton = document.querySelector('.getstarted.scrollto');
-          callNowButton.parentNode.removeChild(callNowButton);
-      
+        
+          // Hide the 'Call Now' button
+          var callNowButton = event.target;
+          callNowButton.style.display = 'none';
+        
           // Check if the user is on a mobile device
-          if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          if (/Mobi|Android|iPhone|iPod/i.test(navigator.userAgent)) {
             // Get the phone number from the href attribute
             var phoneNumber = event.target.getAttribute('href');
             // Initiate the phone call on mobile devices
