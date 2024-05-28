@@ -317,24 +317,45 @@
     
     
 
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>We Want to Hear Your Story</h3>
-            <p> Call or email us so we can get to know you better. Schedule a Free 30-minute consultation to see how we can assist you.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="tel:+14376006677">Call Now</a>
-          </div>
-        </div>
-
+ <!-- ======= Cta Section ======= -->
+ <section id="cta" class="cta">
+  <div class="container">
+    <div class="row" data-aos="zoom-in">
+      <div class="col-lg-9 text-center text-lg-start">
+        <h3>We Want to Hear Your Story</h3>
+        <p> Call or email us so we can get to know you better. Schedule a Free 30-minute consultation to see how we can assist you.</p>
       </div>
-    </section><!-- End Cta Section -->
+      <div class="col-lg-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="tel:+14376006677" onclick="handleCallNowClick(event)">Call Now</a>
+      </div>
+    </div>
+  </div>
+</section><!-- End Cta Section -->
 
+<!-- Include your other JS files here -->
+
+<script>
+  // Function to handle the "Call Now" button click
+  function handleCallNowClick(event) {
+    // Prevent the default action
+    event.preventDefault();
+
+    // Hide the 'Call Now' button
+    var callNowButton = event.target;
+    callNowButton.style.display = 'none';
+
+    // Check if the user is on a mobile device
+    if (/Mobi|Android|iPhone|iPod/i.test(navigator.userAgent)) {
+      // Get the phone number from the href attribute
+      var phoneNumber = event.target.getAttribute('href');
+      // Initiate the phone call on mobile devices
+      window.location.href = phoneNumber;
+    } else {
+      // Show an alert for desktop users
+      alert('Please use your mobile device to call (437) 600-6677');
+    }
+  }
+</script>
   
     
 
