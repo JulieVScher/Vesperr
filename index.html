@@ -117,19 +117,12 @@
             callNowButton.parentNode.removeChild(callNowButton);
             // Set the flag to true to indicate that the button has been clicked
             callNowClicked = true;
+            // Show an alert for desktop users
+            alert('Please use your mobile device to call this number.');
+            // Prevent the default action
+            event.preventDefault();
           }
-          // Prevent the default action
-          event.preventDefault();
-          // Show an alert for desktop users
-          alert('Please use your mobile device to call this number.');
         }
-      
-        // Event listener to prevent reappearing of the "Call Now" button on scroll
-        window.addEventListener('scroll', function() {
-          if (callNowClicked) {
-            window.scrollTo(0, 0); // Scroll to the top to prevent reappearing of the button
-          }
-        });
       </script>
     </div>
   </header><!-- End Header -->
