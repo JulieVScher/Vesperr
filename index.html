@@ -34,6 +34,8 @@
         height: auto; /* Allow videos to maintain aspect ratio */
       }
     }
+
+    
   </style>
 </head>
 <body>
@@ -81,44 +83,54 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
+  
       <div class="logo">
-       <!--  <h1><a href="index.html">ABA in the GTA</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
         <a href="index.html"><img src="assets/img/logoo.png" alt="" class="img-fluid"></a>
       </div>
-
+  
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#more-services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
-          <li><a class="nav-link scrollto " href="#features">Values</a></li>
-         <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#features">Values</a></li>
           <li><a class="nav-link scrollto" href="blog.html" target="_blank">Blog</a></li>
           <li><a class="nav-link scrollto" href="#media" target="_blank">Media</a></li>
           <li><a class="nav-link scrollto" href="Roles.html" target="_blank">Roles</a></li>
-              <!--  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="tel:+14376006677">Call Now</a></li>
+          <li><a class="getstarted scrollto" href="tel:+14376006677" onclick="handleCallNowClick(event)">Call Now</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      
+      <script>
+        // Flag to track if the "Call Now" button has been clicked
+        var callNowClicked = false;
+      
+        // Function to handle the "Call Now" button click
+        function handleCallNowClick(event) {
+          // Check if the button has already been clicked
+          if (!callNowClicked) {
+            // Remove the 'Call Now' button from the DOM
+            var callNowButton = document.querySelector('.getstarted.scrollto');
+            callNowButton.parentNode.removeChild(callNowButton);
+            // Set the flag to true to indicate that the button has been clicked
+            callNowClicked = true;
+          }
+          // Prevent the default action
+          event.preventDefault();
+          // Show an alert for desktop users
+          alert('Please use your mobile device to call this number.');
+        }
+      
+        // Event listener to prevent reappearing of the "Call Now" button on scroll
+        window.addEventListener('scroll', function() {
+          if (callNowClicked) {
+            window.scrollTo(0, 0); // Scroll to the top to prevent reappearing of the button
+          }
+        });
+      </script>
     </div>
   </header><!-- End Header -->
 
