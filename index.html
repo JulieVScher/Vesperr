@@ -105,22 +105,21 @@
       </nav><!-- .navbar -->
       
       <script>
-        // Flag to track if the "Call Now" button has been clicked
-        var callNowClicked = false;
-      
         // Function to handle the "Call Now" button click
         function handleCallNowClick(event) {
-          // Check if the button has already been clicked
-          if (!callNowClicked) {
-            // Remove the 'Call Now' button from the DOM
-            var callNowButton = document.querySelector('.getstarted.scrollto');
-            callNowButton.parentNode.removeChild(callNowButton);
-            // Set the flag to true to indicate that the button has been clicked
-            callNowClicked = true;
+          // Prevent the default action
+          event.preventDefault();
+      
+          // Remove the 'Call Now' button from the DOM
+          var callNowButton = document.querySelector('.getstarted.scrollto');
+          callNowButton.parentNode.removeChild(callNowButton);
+      
+          // Check if the user is on a mobile device
+          if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            // Do nothing else on mobile devices
+          } else {
             // Show an alert for desktop users
             alert('Please use your mobile device to call this number.');
-            // Prevent the default action
-            event.preventDefault();
           }
         }
       </script>
