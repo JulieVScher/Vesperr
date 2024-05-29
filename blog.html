@@ -68,11 +68,32 @@
             </ul>
           </li>-->
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="tel:+16474916908">Call Now!</a></li>
+          <a class="getstarted scrollto" href="tel:+14376006677" onclick="handleCallNowClick(event)">Call Now</a>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      <script>
+        // Function to handle the "Call Now" button click
+        function handleCallNowClick(event) {
+          // Prevent the default action
+          event.preventDefault();
+        
+          // Hide the 'Call Now' button
+          var callNowButton = event.target;
+          callNowButton.style.display = 'none';
+        
+          // Check if the user is on a mobile device
+          if (/Mobi|Android|iPhone|iPod/i.test(navigator.userAgent)) {
+            // Get the phone number from the href attribute
+            var phoneNumber = event.target.getAttribute('href');
+            // Initiate the phone call on mobile devices
+            window.location.href = phoneNumber;
+          } else {
+            // Show an alert for desktop users
+            alert('Please use your mobile device to call (437) 600-6677');
+          }
+        }
+      </script>
     </div>
   </header><!-- End Header -->
         <style type="text/css">
