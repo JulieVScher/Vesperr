@@ -1519,56 +1519,6 @@ section {
 }
 
 
-.cta {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta1.jpg") center center;
-  background-size: cover;
-  padding: 80px 0;
-}
-
-.cta h3 {
-  color: #005d9e;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  color: #005d9e;
-}
-
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 20px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fcfef1;
-  background: #ff3d33;
-}
-
-.cta .cta-btn:hover {
-  background: #005d9e;
-}
-
-@media (min-width: 1024px) {
-  .cta {
-    background-attachment: fixed;
-  }
-}
-
-@media (min-width: 769px) {
-  .cta .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-
-
 .cta2 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/yahoo.jpg") center center;
   background-size: cover;
@@ -1596,7 +1546,7 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background:#A9DCE3;;
+  background: #A9DCE3;
 }
 
 .cta2 .cta2-btn:hover {
@@ -1609,31 +1559,38 @@ section {
   }
 }
 
+.logo4-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.logo4-img {
+  max-width: 200px; /* Increase the max-width for large screens */
+  height: auto;
+  margin: 10px; /* Add horizontal margin to space out the logos */
+}
+
 @media (max-width: 768px) {
   .cta2 {
-    height: 300px; /* Adjust the height value as desired for mobile devices */
+    height: auto; /* Adjust the height to auto for flexible height */
   }
 
-  .logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start; /* Adjust alignment as desired */
+  .logo4-container {
+    justify-content: space-around; /* Space logos evenly on smaller screens */
     height: 100%;
     overflow: hidden;
     padding-bottom: 20px; /* Add the desired padding value */
   }
 
   .logo4-img {
-    max-height: calc(33.33% - 20px); /* Adjust height and margin value as desired */
-    width: auto;
-    flex: 0 0 calc(33.33% - 20px); /* Adjust flex value based on the number of logos and margin */
+    max-width: 160px; /* Increase the max-width for medium screens */
+    height: auto;
+    flex: 0 0 calc(50% - 20px); /* Adjust flex value based on the number of logos and margin */
     object-fit: contain;
-    margin-bottom: 5px; /* Add the desired margin value */
-  }
-
-  .logo4-img:last-child {
-    margin-bottom: 0; /* Reset margin for the last stacked logo */
+    margin-bottom: 10px; /* Add the desired margin value */
   }
 }
 
@@ -1643,30 +1600,17 @@ section {
   }
 
   .logo4-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack logos vertically on small screens */
     align-items: center;
     padding: 5px; /* Add the desired padding value */
   }
 
   .logo4-img {
-    width: 100%; /* Set the width to occupy full container width */
+    max-width: 90%; /* Increase the max-width for small screens */
     height: auto; /* Allow logos to adjust their height proportionally */
-    object-fit: contain;
     margin-bottom: 20px; /* Add the desired margin value */
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # F.A.Q Section
