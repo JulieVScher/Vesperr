@@ -1850,6 +1850,7 @@ section {
   color: #fcfef1;
   transition: 0.4s;
   border-radius: 20px;
+  margin-top: 20px;
 }
 
 .pill-shaped-button {
