@@ -47,7 +47,7 @@
         }
     
   </style>
-   <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- Load reCAPTCHA API -->
+
   </head>
 </head>
 <body>
@@ -774,45 +774,53 @@
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Your Title</title>
-              <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- Include the reCAPTCHA script -->
+         
           </head>
           <body>
-              <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-                  <form action="https://formspree.io/f/xnqybkgw" method="post" role="form" class="php-email-form" id="contactForm">
-                      <div class="row">
-                          <div class="form-group col-md-6">
-                              <label for="name">Your Name</label>
-                              <input type="text" name="name" class="form-control" id="name" required>
-                          </div>
-                          <div class="form-group col-md-6 mt-3 mt-md-0">
-                              <label for="email">Your Email</label>
-                              <input type="email" class="form-control" name="email" id="email" required>
-                          </div>
-                      </div>
-                      <div class="form-group mt-3">
-                          <label for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" required>
-                      </div>
-                      <div class="form-group mt-3">
-                          <label for="message">Message</label>
-                          <textarea class="form-control" name="message" rows="10" required title="Please enter your message here"></textarea>
-                      </div>
-                      <div class="my-3">
-                          <div class="sent-message" style="display: none">Thank you for contacting ABA in the GTA. We will get back to you as soon as possible.</div>
-                      </div>
-                      <div class="g-recaptcha" data-sitekey="6LeBu1sqAAAAAOdpewAckhCVbtBE5DjJUgfAsh-L"></div> <!-- reCAPTCHA widget -->
-                      <div class="text-center">
-                          <button type="submit" id="sendMessageBtn">Send Message</button>
-                      </div>
-                  </form>
+     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
+      <form action="https://formspree.io/f/xzzowzvw" method="post" role="form" class="php-email-form" id="contactForm">
+
+          <!-- Honeypot field (hidden from humans, blocks bots) -->
+          <input type="text" name="website" style="display:none" autocomplete="off">
+
+          <!-- Wrap all form fields in a container so we can hide them after submit -->
+          <div id="formFields">
+              <div class="row">
+                  <div class="form-group col-md-6">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                      <label for="email">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
               </div>
+
+              <div class="form-group mt-3">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+
+              <div class="form-group mt-3">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required title="Please enter your message here"></textarea>
+              </div>
+          </div>
+
+          <div class="my-3">
+              <div class="sent-message" style="display: none">
+                  Thank you for contacting ABA in the GTA. We will get back to you as soon as possible.
+              </div>
+          </div>
+
+          <div class="text-center">
+              <button type="submit" id="sendMessageBtn">Send Message</button>
+          </div>
+
+      </form>
+  </div>
           
-              <script>
-                  document.getElementById('contactForm').addEventListener('submit', function(event) {
-                      // Hide the button after form submission
-                      document.getElementById('sendMessageBtn').style.display = 'none';
-                  });
-              </script>
+              
           </body>
           </html>
           
@@ -989,47 +997,42 @@ a.tutorial_link {
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-  function submitForm(event) {
-    event.preventDefault();
-    var form = event.target;
-    var formData = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        form.reset();
-        document.querySelector(".sent-message").style.display = "block";
-      } else {
-        throw new Error('Network response was not ok');
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      document.querySelector(".error-message").innerHTML = "There was an error submitting the form. Please try again later.";
-    })
-    .finally(() => {
-      document.querySelector(".loading").style.display = "none";
-    });
-  }
-
-  document.querySelector('.php-email-form').addEventListener('submit', submitForm);
-
-
-</script>
-<script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-      // Hide the button after form submission
-      document.getElementById('sendMessageBtn').style.display = 'none';
-  });
-</script>
+      document.getElementById('contactForm').addEventListener('submit', async function(event) {
+          event.preventDefault();
+
+          const form = event.target;
+          const submitButton = document.getElementById('sendMessageBtn');
+          const thankYou = document.querySelector('.sent-message');
+          const formFields = document.getElementById('formFields');
+          submitButton.disabled = true;
+
+          try {
+              const response = await fetch(form.action, {
+                  method: form.method,
+                  body: new FormData(form),
+                  headers: { 'Accept': 'application/json' }
+              });
+
+              if (response.ok) {
+                  form.reset();
+
+                  // Hide all form fields and button
+                  formFields.style.display = 'none';
+                  submitButton.style.display = 'none';
+
+                  // Show thank-you message
+                  thankYou.style.display = 'block';
+              } else {
+                  alert('Something went wrong. Please try again later.');
+                  submitButton.disabled = false;
+              }
+          } catch (error) {
+              alert('Network error. Please try again later.');
+              submitButton.disabled = false;
+          }
+      });
+  </script>
 </body>
 
 </html>
